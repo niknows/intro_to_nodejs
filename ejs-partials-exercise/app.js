@@ -1,9 +1,14 @@
+/*SETUP*/
 var express = require('express');
 var app = express();
 
+/*serving /public */
 app.use(express.static("public"));
+/*setting templating engine*/
 app.set("view engine", "ejs");
 
+/*ROUTES*/
+/*root*/
 app.get('/',function(req, res){
     res.render('home');
     
