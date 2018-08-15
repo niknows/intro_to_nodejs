@@ -1,5 +1,7 @@
+/*SETUP*/
 var express = require('express');
 var app = express();
+
 
 
 app.get('/',function(req, res){
@@ -18,6 +20,7 @@ app.get("/posts",function(req,res){
         res.render("posts.ejs", {posts: posts});
 });
 
+/*SERVER SETUP*/
 app.listen(process.env.PORT, process.env.IP, function(){
     console.log("The server has started");
 });
