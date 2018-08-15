@@ -1,3 +1,4 @@
+/*SETUP*/
 var express = require("express");
 var app = express();
 
@@ -23,6 +24,6 @@ app.get("*",function(req,res){
 
 
 
-/*ENDEREÇAMENTO DO APP*/
+/*SERVER SETUP*/
 app.listen(process.env.PORT, process.env.IP, function(){
     console.log("server has started.");
