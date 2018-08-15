@@ -3,7 +3,7 @@ var express = require('express');
 var app = express();
 
 
-
+/*ROUTES*/
 app.get('/',function(req, res){
     res.render('home.ejs');
     
